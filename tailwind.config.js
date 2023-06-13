@@ -7,8 +7,10 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      DEFAULT: ['1.125rem', '1.5rem'],
+      DEFAULT: ['1.125rem', '1.85rem'],
       title: ['2.5rem', '2.75rem'],
+      subtitle: ['2rem', '2.25rem'],
+      button: ['1rem', '1rem'],
     },
     screens: {
       mobile: '375px',
