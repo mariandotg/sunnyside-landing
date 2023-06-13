@@ -11,6 +11,8 @@ module.exports = {
       title: ['2.5rem', '2.75rem'],
       subtitle: ['2rem', '2.25rem'],
       button: ['1rem', '1rem'],
+      'service-paragraph': ['1rem', '1.5rem'],
+      'service-title': ['1.75rem', '2rem'],
     },
     screens: {
       mobile: '375px',
