@@ -3,7 +3,7 @@ import IconArrowDown from '@/public/icon-arrow-down.svg';
 
 export default function Home() {
   return (
-    <main className='flex flex-col items-center justify-between min-h-screen'>
+    <main className='flex flex-col items-center justify-between'>
       <section className='bg-light-blue pt-[150px] w-full'>
         <div className='relative w-full flex justify-center items-center h-[400px]'>
           <div className='absolute flex flex-col items-center justify-center w-full top-6 gap-y-12'>
@@ -98,6 +98,108 @@ export default function Home() {
           <Image
             alt='Stand out'
             src='/desktop/image-photography.jpg'
+            className='absolute z-0 object-cover'
+            fill={true}
+          />
+        </div>
+      </section>
+      <section className='flex flex-col items-center px-6 py-14 gap-y-16'>
+        <h2 className='font-bold uppercase tracking-[.25em] text-grayish-blue font-fraunces'>
+          Client testimonials
+        </h2>
+        <div className='flex flex-col items-center justify-center gap-y-8'>
+          <Image
+            alt='Emily R.'
+            src='/image-emily.jpg'
+            className='rounded-full'
+            width={64}
+            height={64}
+          />
+          <p className='text-center text-very-dark-grayish-blue font-barlow text'>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div className='flex flex-col items-center justify-center gap-y-3'>
+            <h3 className='font-black text-very-dark-desaturated-blue font-fraunces text'>
+              Emily R.
+            </h3>
+            <span className='text-grayish-blue font-barlow text-button'>
+              Marketing Director
+            </span>
+          </div>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-y-8'>
+          <Image
+            alt='Emily R.'
+            src='/image-emily.jpg'
+            className='rounded-full'
+            width={64}
+            height={64}
+          />
+          <p className='text-center text-very-dark-grayish-blue font-barlow text'>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div className='flex flex-col items-center justify-center gap-y-3'>
+            <h3 className='font-black text-very-dark-desaturated-blue font-fraunces text'>
+              Emily R.
+            </h3>
+            <span className='text-grayish-blue font-barlow text-button'>
+              Marketing Director
+            </span>
+          </div>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-y-8'>
+          <Image
+            alt='Emily R.'
+            src='/image-emily.jpg'
+            className='rounded-full'
+            width={64}
+            height={64}
+          />
+          <p className='text-center text-very-dark-grayish-blue font-barlow text'>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div className='flex flex-col items-center justify-center gap-y-3'>
+            <h3 className='font-black text-very-dark-desaturated-blue font-fraunces text'>
+              Emily R.
+            </h3>
+            <span className='text-grayish-blue font-barlow text-button'>
+              Marketing Director
+            </span>
+          </div>
+        </div>
+      </section>
+      <section className='grid w-full grid-cols-2 grid-rows-2 h-[400px]'>
+        <div className='relative col-span-1'>
+          <Image
+            alt='Milk Bottles'
+            src='/desktop/image-gallery-milkbottles.jpg'
+            className='absolute z-0 object-cover'
+            fill={true}
+          />
+        </div>
+        <div className='relative col-span-1'>
+          <Image
+            alt='Orange'
+            src='/desktop/image-gallery-orange.jpg'
+            className='absolute z-0 object-cover'
+            fill={true}
+          />
+        </div>
+        <div className='relative col-span-1'>
+          <Image
+            alt='Cone'
+            src='/desktop/image-gallery-cone.jpg'
+            className='absolute z-0 object-cover'
+            fill={true}
+          />
+        </div>
+        <div className='relative col-span-1'>
+          <Image
+            alt='Sugar Cubes'
+            src='/desktop/image-gallery-sugarcubes.jpg'
             className='absolute z-0 object-cover'
             fill={true}
           />
