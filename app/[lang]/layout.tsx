@@ -1,5 +1,5 @@
 import React from 'react';
-import './globals.css';
+import '../../styles/globals.css';
 import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
 import Footer from '@/components/Footer';
@@ -13,15 +13,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: {
+    lang: string;
+  };
 }) {
   return (
-    <html lang='en'>
+    <html lang={params.lang}>
       <body className={inter.className}>
-        <NavBar />
+        {/* @ts-expect-error Async Server Component */}
+        <NavBar locale={params.lang} />
         {children}
-        <Footer />
+        {/* @ts-expect-error Async Server Component */}
+        <Footer locale={params.lang} />
       </body>
     </html>
   );

@@ -1,0 +1,59 @@
+{
+  "sections": [
+    { "label": "Acerca de", "path": "#about" },
+    { "label": "Servicios", "path": "#services" },
+    { "label": "Proyectos", "path": "#projects" },
+    { "label": "Contacto", "path": "#contact" }
+  ],
+  "tagline": "Somos creativos",
+  "transformSubtitle": "Transforma tu marca",
+  "transformDescription": "Somos una agencia creativa de servicio completo especializada en ayudar a las marcas a crecer rápidamente. Atrae a tus clientes a través de imágenes convincentes que hacen la mayor parte del marketing por ti.",
+  "standOutSubtitle": "Destaca ante el público adecuado",
+  "standOutDescription": "Utilizando una fórmula colaborativa de diseñadores, investigadores, fotógrafos, videógrafos y redactores, construiremos y ampliaremos tu marca en entornos digitales.",
+  "learnMore": "Más información",
+  "services": [
+    {
+      "title": "Diseño gráfico",
+      "description": "Un gran diseño te hace memorable. Entregamos obras de arte que resaltan el mensaje de tu marca y captan la atención de posibles clientes.",
+      "imagePath": "image-graphic-design.jpg"
+    },
+    {
+      "title": "Fotografía",
+      "description": "Aumenta tu credibilidad obteniendo las fotos más impresionantes y de alta calidad que mejorarán la imagen de tu negocio.",
+      "imagePath": "image-photography.jpg"
+    }
+  ],
+  "testimonialsSubtitle": "Testimonios de clientes",
+  "testimonials": [
+    {
+      "text": "Depositamos nuestra confianza en Sunnyside y cumplieron, asegurándose de que nuestras necesidades fueran satisfechas y de que siempre se cumplieran los plazos.",
+      "author": "Emily R.",
+      "position": "Directora de Marketing",
+      "imagePath": "image-emily.jpg"
+    },
+    {
+      "text": "El entusiasmo de Sunnyside, junto con su gran interés en el éxito de nuestra marca, hizo que fuera una experiencia satisfactoria y agradable.",
+      "author": "Thomas S.",
+      "position": "Director de Operaciones",
+      "imagePath": "image-thomas.jpg"
+    },
+    {
+      "text": "¡Resultado final increíble! Nuestras ventas aumentaron más del 400% cuando trabajamos con Sunnyside. ¡Muy recomendado!",
+      "author": "Jennie F.",
+      "position": "Dueña de negocio",
+      "imagePath": "image-jennie.jpg"
+    }
+  ],
+  "galleryImgs": [
+    {
+      "imageAlt": "Botellas de leche",
+      "imagePath": "image-gallery-milkbottles.jpg"
+    },
+    { "imageAlt": "Naranja", "imagePath": "image-gallery-orange.jpg" },
+    { "imageAlt": "Cono", "imagePath": "image-gallery-cone.jpg" },
+    {
+      "imageAlt": "Cubos de azúcar",
+      "imagePath": "image-gallery-sugarcubes.jpg"
+    }
+  ]
+}

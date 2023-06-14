@@ -1,6 +1,13 @@
+import { getDictionary } from '@/static/dictionaries';
 import Logo from '../public/logo.svg';
 
-const Footer = () => {
+interface Props {
+  locale: string;
+}
+
+const Footer = async ({ locale }: Props) => {
+  const dict = await getDictionary(locale);
+
   return (
     <footer className='bg-[#90D4C5] h-fit w-full '>
       <div className='flex flex-col items-center px-8 py-12 gap-y-10'>
@@ -9,15 +16,15 @@ const Footer = () => {
           fill='#FF0000'
         />
         <ul className='flex justify-between w-full font-black font-barlow text text-dark-moderate-cyan'>
-          <li>
-            <a href='#about'>About</a>
-          </li>
-          <li>
-            <a href='#services'>Services</a>
-          </li>
-          <li>
-            <a href='#projects'>Projects</a>
-          </li>
+          {dict.sections.map((section, index) => {
+            if (index !== dict.sections.length - 1) {
+              return (
+                <li key={index}>
+                  <a href={section.path}>{section.label}</a>
+                </li>
+              );
+            } else return <></>;
+          })}
         </ul>
       </div>
       <div className='bg-[#080808] w-full flex items-center flex-col gap-y-2 h-fit pt-4 pb-8 text-white font-ibm-mono italic text-copyright'>

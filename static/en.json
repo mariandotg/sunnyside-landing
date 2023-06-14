@@ -1,0 +1,56 @@
+{
+  "sections": [
+    { "label": "About", "path": "#about" },
+    { "label": "Services", "path": "#services" },
+    { "label": "Projects", "path": "#projects" },
+    { "label": "Contact", "path": "#contact" }
+  ],
+  "tagline": "We are creatives",
+  "transformSubtitle": "Transform your brand",
+  "transformDescription": "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
+  "standOutSubtitle": "Stand out to the right audience",
+  "standOutDescription": "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
+  "learnMore": "Learn more",
+  "services": [
+    {
+      "title": "Graphic design",
+      "description": "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.",
+      "imagePath": "image-graphic-design.jpg"
+    },
+    {
+      "title": "Photography",
+      "description": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+      "imagePath": "image-photography.jpg"
+    }
+  ],
+  "testimonialsSubtitle": "Client testimonials",
+  "testimonials": [
+    {
+      "text": "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
+      "author": "Emily R.",
+      "position": "Marketing Director",
+      "imagePath": "image-emily.jpg"
+    },
+    {
+      "text": "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
+      "author": "Thomas S.",
+      "position": "Chief Operating Officer",
+      "imagePath": "image-thomas.jpg"
+    },
+    {
+      "text": "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
+      "author": "Jennie F.",
+      "position": "Business Owner",
+      "imagePath": "image-jennie.jpg"
+    }
+  ],
+  "galleryImgs": [
+    {
+      "imageAlt": "Milk Bottles",
+      "imagePath": "image-gallery-milkbottles.jpg"
+    },
+    { "imageAlt": "Orange", "imagePath": "image-gallery-orange.jpg" },
+    { "imageAlt": "Cone", "imagePath": "image-gallery-cone.jpg" },
+    { "imageAlt": "Sugar Cubes", "imagePath": "image-gallery-sugarcubes.jpg" }
+  ]
+}
