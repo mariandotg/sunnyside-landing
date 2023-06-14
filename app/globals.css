@@ -13,3 +13,9 @@ html {
 body {
   @apply h-full w-full overflow-x-hidden;
 }
+
+@layer components {
+  .before-triangle {
+    @apply w-0 h-0 border-t-[24px] border-t-transparent border-r-[24px] border-r-white border-b-[0px] border-b-transparent;
+  }
+}
