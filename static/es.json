@@ -55,5 +55,9 @@
       "imageAlt": "Cubos de azúcar",
       "imagePath": "image-gallery-sugarcubes.jpg"
     }
-  ]
+  ],
+  "footer": {
+    "madeIn": "Hecho en Buenos Aires, Argentina",
+    "copyright": "2023 © Mariano Guillaume"
+  }
 }

@@ -28,10 +28,8 @@ const Footer = async ({ locale }: Props) => {
         </ul>
       </div>
       <div className='bg-[#080808] w-full flex items-center flex-col gap-y-2 h-fit py-4 text-white font-ibm-mono italic text-copyright'>
-        <p className='flex items-center gap-x-2'>
-          Hecho en Buenos Aires, Argentina
-        </p>
-        <span>2023 © Mariano Guillaume</span>
+        <p className='flex items-center gap-x-2'>{dict.footer.madeIn}</p>
+        <span>{dict.footer.copyright}</span>
       </div>
     </footer>
   );

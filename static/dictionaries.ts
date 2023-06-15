@@ -23,6 +23,11 @@ interface GalleryImage {
   imagePath: string;
 }
 
+interface Footer {
+  madeIn: string;
+  copyright: string;
+}
+
 interface Dictionary {
   sections: Section[];
   tagline: string;
@@ -35,6 +40,7 @@ interface Dictionary {
   testimonialsSubtitle: string;
   testimonials: Testimonial[];
   galleryImgs: GalleryImage[];
+  footer: Footer;
 }
 
 interface Dictionaries {

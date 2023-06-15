@@ -52,5 +52,9 @@
     { "imageAlt": "Orange", "imagePath": "image-gallery-orange.jpg" },
     { "imageAlt": "Cone", "imagePath": "image-gallery-cone.jpg" },
     { "imageAlt": "Sugar Cubes", "imagePath": "image-gallery-sugarcubes.jpg" }
-  ]
+  ],
+  "footer": {
+    "madeIn": "Made in Buenos Aires, Argentina",
+    "copyright": "2023 © Mariano Guillaume"
+  }
 }
