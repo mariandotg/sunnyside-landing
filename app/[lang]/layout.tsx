@@ -1,11 +1,8 @@
 import React from 'react';
 import '../../styles/globals.css';
-import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Sunnyside agency',
@@ -22,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
-      <body className={inter.className}>
+      <body className='desktop:relative'>
         {/* @ts-expect-error Async Server Component */}
         <NavBar locale={params.lang} />
         {children}

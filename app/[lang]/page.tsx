@@ -13,7 +13,7 @@ export default async function Home({ params }: Props) {
 
   return (
     <main className='flex flex-col items-center justify-between'>
-      <section className='w-full pt-7 bg-light-blue'>
+      <section className='w-full'>
         <div className='relative w-full flex justify-center items-center h-[400px] desktop:h-[800px]'>
           <div className='absolute flex flex-col items-center justify-center w-full top-6 desktop:top-56 desktop:gap-y-20 gap-y-12'>
             <h1 className='z-10 font-black tracking-[.15em] text-center text-white uppercase font-fraunces text-title '>
@@ -24,7 +24,7 @@ export default async function Home({ params }: Props) {
           <Image
             alt='Hero'
             src='/desktop/image-header.jpg'
-            className='absolute z-0 object-cover -top-1'
+            className='absolute z-0 object-cover'
             fill={true}
           />
         </div>
