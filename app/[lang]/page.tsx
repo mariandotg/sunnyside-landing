@@ -37,7 +37,7 @@ export default async function Home({ params }: Props) {
           <p className='text-center desktop:text-left text-dark-grayish-blue font-barlow text'>
             {dict.transformDescription}
           </p>
-          <button className='p-2 font-black tracking-wider uppercase text-button bg-light-blue text-very-dark-desaturated-blue font-fraunces'>
+          <button className='base-button after:bg-yellow'>
             {dict.learnMore}
           </button>
         </div>
@@ -66,7 +66,7 @@ export default async function Home({ params }: Props) {
           <p className='text-center desktop:text-left text-dark-grayish-blue font-barlow text'>
             {dict.standOutDescription}
           </p>
-          <button className='p-2 font-black tracking-wider uppercase text-button bg-light-blue text-very-dark-desaturated-blue font-fraunces'>
+          <button className='base-button after:bg-soft-red'>
             {dict.learnMore}
           </button>
         </div>

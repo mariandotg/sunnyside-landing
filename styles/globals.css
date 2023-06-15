@@ -18,4 +18,8 @@ body {
   .before-triangle {
     @apply w-0 h-0 border-t-[24px] border-t-transparent border-r-[24px] border-r-white border-b-[0px] border-b-transparent;
   }
+
+  .base-button {
+    @apply p-2 relative after:content-[""] rounded-md after:absolute after:left-0 after:bottom-1 z-10 after:-z-10 after:opacity-40 after:rounded-sm after:h-2 after:w-full font-black tracking-wider uppercase text-button text-very-dark-desaturated-blue font-fraunces;
+  }
 }
