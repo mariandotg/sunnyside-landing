@@ -14,8 +14,8 @@ export default async function Home({ params }: Props) {
   return (
     <main className='flex flex-col items-center justify-between'>
       <section className='w-full pt-7 bg-light-blue'>
-        <div className='relative w-full flex justify-center items-center h-[400px]'>
-          <div className='absolute flex flex-col items-center justify-center w-full top-6 gap-y-12'>
+        <div className='relative w-full flex justify-center items-center h-[400px] desktop:h-[800px]'>
+          <div className='absolute flex flex-col items-center justify-center w-full top-6 desktop:top-56 desktop:gap-y-20 gap-y-12'>
             <h1 className='z-10 font-black tracking-[.15em] text-center text-white uppercase font-fraunces text-title '>
               {dict.tagline}
             </h1>
@@ -29,29 +29,29 @@ export default async function Home({ params }: Props) {
           />
         </div>
       </section>
-      <section className='flex flex-col-reverse w-full'>
-        <div className='flex flex-col items-center justify-center py-16 px-7 gap-y-7'>
-          <h2 className='font-black max-w-[275px] text-very-dark-desaturated-blue text-center font-fraunces text-subtitle'>
+      <section className='flex flex-col-reverse w-full desktop:grid desktop:grid-cols-2'>
+        <div className='flex flex-col items-center justify-center py-16 desktop:items-start px-7 gap-y-7 desktop:px-28 desktop:py-36'>
+          <h2 className='font-black desktop:text-left max-w-[275px] text-very-dark-desaturated-blue text-center font-fraunces text-subtitle'>
             {dict.transformSubtitle}
           </h2>
-          <p className='text-center text-dark-grayish-blue font-barlow text'>
+          <p className='text-center desktop:text-left text-dark-grayish-blue font-barlow text'>
             {dict.transformDescription}
           </p>
           <button className='p-2 font-black tracking-wider uppercase text-button bg-light-blue text-very-dark-desaturated-blue font-fraunces'>
             {dict.learnMore}
           </button>
         </div>
-        <div className='relative w-full flex justify-center items-center h-[300px]'>
+        <div className='relative flex items-center justify-center w-full'>
           <Image
             alt='Transform'
             src='/desktop/image-transform.jpg'
-            className='absolute z-0 object-cover -top-1'
+            className='absolute z-0 object-cover'
             fill={true}
           />
         </div>
       </section>
-      <section className='flex flex-col w-full'>
-        <div className='relative w-full flex justify-center items-center h-[300px]'>
+      <section className='flex flex-col w-full desktop:grid desktop:grid-cols-2'>
+        <div className='relative flex items-center justify-center w-full'>
           <Image
             alt='Stand out'
             src='/desktop/image-stand-out.jpg'
@@ -59,11 +59,11 @@ export default async function Home({ params }: Props) {
             fill={true}
           />
         </div>
-        <div className='flex flex-col items-center justify-center py-16 px-7 gap-y-7'>
-          <h2 className='font-black max-w-[275px] text-very-dark-desaturated-blue text-center font-fraunces text-subtitle'>
+        <div className='flex flex-col items-center justify-center py-16 desktop:items-start px-7 gap-y-7 desktop:px-28 desktop:py-36'>
+          <h2 className='font-black text-center desktop:text-left desktop:max-w-none text-very-dark-desaturated-blue font-fraunces text-subtitle'>
             {dict.standOutSubtitle}
           </h2>
-          <p className='text-center text-dark-grayish-blue font-barlow text'>
+          <p className='text-center desktop:text-left text-dark-grayish-blue font-barlow text'>
             {dict.standOutDescription}
           </p>
           <button className='p-2 font-black tracking-wider uppercase text-button bg-light-blue text-very-dark-desaturated-blue font-fraunces'>
@@ -71,7 +71,7 @@ export default async function Home({ params }: Props) {
           </button>
         </div>
       </section>
-      <section className='flex flex-col w-full'>
+      <section className='flex flex-col w-full desktop:grid desktop:grid-cols-2'>
         {dict.services.map((service, index) => (
           <div
             key={index}
@@ -81,7 +81,7 @@ export default async function Home({ params }: Props) {
               <h2 className='font-black max-w-[275px] text-dark-desaturated-cyan text-center font-fraunces text-service-title'>
                 {service.title}
               </h2>
-              <p className='text-center text-dark-desaturated-cyan font-barlow text-service-paragraph'>
+              <p className='text-center text-dark-desaturated-cyan font-barlow text-service-paragraph max-w-[300px]'>
                 {service.description}
               </p>
             </div>
@@ -94,37 +94,39 @@ export default async function Home({ params }: Props) {
           </div>
         ))}
       </section>
-      <section className='flex flex-col items-center px-6 py-14 gap-y-16'>
+      <section className='flex flex-col items-center px-6 py-14 gap-y-16 desktop:py-32 desktop:px-32'>
         <h2 className='font-bold uppercase text-center tracking-[.25em] text-grayish-blue font-fraunces'>
           {dict.testimonialsSubtitle}
         </h2>
-        {dict.testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className='flex flex-col items-center justify-center gap-y-8'
-          >
-            <Image
-              alt={testimonial.author}
-              src={`/${testimonial.imagePath}`}
-              className='rounded-full'
-              width={64}
-              height={64}
-            />
-            <p className='text-center text-very-dark-grayish-blue font-barlow text'>
-              {testimonial.text}
-            </p>
-            <div className='flex flex-col items-center justify-center gap-y-3'>
-              <h3 className='font-black text-very-dark-desaturated-blue font-fraunces text'>
-                {testimonial.author}
-              </h3>
-              <span className='text-grayish-blue font-barlow text-button'>
-                {testimonial.position}
-              </span>
+        <div className='grid items-center grid-cols-1 gap-16 desktop:grid-cols-3'>
+          {dict.testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className='flex flex-col items-center justify-center h-full gap-y-8 desktop:grid desktop:grid-rows-3 desktop:justify-items-center'
+            >
+              <Image
+                alt={testimonial.author}
+                src={`/${testimonial.imagePath}`}
+                className='rounded-full'
+                width={64}
+                height={64}
+              />
+              <p className='h-full text-center text-very-dark-grayish-blue font-barlow text'>
+                {testimonial.text}
+              </p>
+              <div className='flex flex-col items-center justify-center gap-y-3'>
+                <h3 className='font-black text-very-dark-desaturated-blue font-fraunces text'>
+                  {testimonial.author}
+                </h3>
+                <span className='text-grayish-blue font-barlow text-button'>
+                  {testimonial.position}
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
-      <section className='grid w-full grid-cols-2 grid-rows-2 h-[400px]'>
+      <section className='grid w-full grid-cols-2 grid-rows-2 h-[400px] desktop:grid-cols-4 desktop:grid-rows-1'>
         {dict.galleryImgs.map((image, index) => (
           <div key={index} className='relative col-span-1'>
             <Image

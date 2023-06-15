@@ -15,7 +15,7 @@ const Footer = async ({ locale }: Props) => {
           className='fill-dark-desaturated-cyan w-[123px] h-6'
           fill='#FF0000'
         />
-        <ul className='flex justify-between w-full font-black font-barlow text text-dark-moderate-cyan'>
+        <ul className='flex justify-between gap-8 font-black font-barlow text text-dark-moderate-cyan'>
           {dict.sections.map((section, index) => {
             if (index !== dict.sections.length - 1) {
               return (
@@ -27,11 +27,11 @@ const Footer = async ({ locale }: Props) => {
           })}
         </ul>
       </div>
-      <div className='bg-[#080808] w-full flex items-center flex-col gap-y-2 h-fit pt-4 pb-8 text-white font-ibm-mono italic text-copyright'>
+      <div className='bg-[#080808] w-full flex items-center flex-col gap-y-2 h-fit py-4 text-white font-ibm-mono italic text-copyright'>
         <p className='flex items-center gap-x-2'>
           Hecho en Buenos Aires, Argentina
         </p>
-        <span className=''>2023 © Mariano Guillaume</span>
+        <span>2023 © Mariano Guillaume</span>
       </div>
     </footer>
   );
